@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event handling</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <ol class="menu">
+                <li class="menu-item">Home</li>
+                <li class="menu-item">About</li>
+                <li class="menu-item">Contact</li>
+                <li class="menu-item">Services</li>
+            </ol>
+            <div class="hambuger">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </div>
+
+            <ul class="mobile-menu d-none">
+                <li class="menu-item">Home</li>
+                <li class="menu-item">About</li>
+                <li class="menu-item">Contact</li>
+                <li class="menu-item">Services</li>
+            </ul>
+
+        </div>
+        <div class="buttons">
+            <button class="open">open</button>
+            <button class="close d-none">close</button>
+        </div>
+        <div class="counter">
+            <h1 class="count">50</h1>
+            <button class="increase">Add</button>
+            <button class="decrease">Subtract</button>
+        </div>
+
+        <div class="todo">
+            <h1>To Do</h1>
+            <ul class="todo-list"></ul>
+            <div class="todo-input">
+                <input type="text" placeholder="Enter your todo" class="input">
+                <button class="add">Add</button>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="./index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+body{
+    font-family: 'Croissant One', cursive;
+}
+.menu{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.line{
+    width: 30px;
+    height: 2px;
+    background-color: #2f2d2d;
+    margin: 5px;
+}
+.hambuger{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+.d-none{
+    display: none !important;
+}
+@media screen and (max-width: 768px){
+    .menu{
+        display: none;
+    }
+    .hambuger{
+        display: block;
+    }
+    .mobile-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        list-style-type: none;
+        align-items: center;
+        height: 50vh;
+        border: 1px solid #2f2d2d;
+        max-width: 100px;
+        padding: 5%;
+    }
+}
+    
